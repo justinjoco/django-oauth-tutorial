@@ -135,5 +135,6 @@ REST_FRAMEWORK = {
 
 OAUTH2_PROVIDER = {
     'RESOURCE_SERVER_INTROSPECTION_URL': 'http://127.0.0.1:8080/o/introspect/',
+    # Below is the resource server's (client_id, client_secret) tuple registered with the Auth server. This resource server must be registered as an application with the Client Credentials grant.
     'RESOURCE_SERVER_INTROSPECTION_CREDENTIALS': ('EoWigAerWywHmddG0RMzF5fKiytAV2RMlnW7VuVy','eoPbg2HT3RUk9UqMcx6NvxlzfYNrvQjtgQF1qgUuV0b8yXnQN4WmPRwlKtxUPvyhWbxtjBpYlXkpG2VhaviKZwidHKJMEQIAhr5pMpgkNqExCpPea9RJ3QPx7ObrOnpB'),
 }
