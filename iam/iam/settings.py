@@ -11,7 +11,7 @@ https://docs.djangoproject.com/en/5.1/ref/settings/
 """
 
 from pathlib import Path
-
+import os
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
 
@@ -137,8 +137,11 @@ OAUTH2_PROVIDER = {
     'SCOPES': {
         'read': "Read scope",
         'write': "Write scope",
-        "groups": "Access to your groups"
-    }
+        "groups": "Access to your groups",
+        "openid": "open ID connect scope"
+    },
+    "OIDC_ENABLED": True,
+    "OIDC_RSA_PRIVATE_KEY": os.environ.get("OIDC_RSA_PRIVATE_KEY")
 }
 
 LOGIN_URL = '/admin/login'
