@@ -2,3 +2,4 @@
 __pycache__
 oidc.key
 temp.txt
+db.sqlite3
